@@ -63,4 +63,30 @@ tangente=math.tan(math.radians(num))
 print(seno,coseno,tangente)
 
 """
+"""
+palabra=str(input("ingrese una palabra: "))
+letra=str(input("ingrese una letra: "))
 
+if letra in palabra : 
+    print(f"la letra{letra} forma para de la palabra {palabra} :")
+    cont=palabra.count(letra)
+    print(f"la letra {letra} se repite {cont} veces en la palabra {palabra}")
+else:
+    print(f"la letra {letra} no forma parte de la palabra {palabra}")
+
+"""
+
+import random
+numero=random.randint(0,100)
+bandera = False
+while bandera != True:
+    num=int(input("ingrese un numero del 1-100 "))
+    print("verificando numero")
+    if num==numero:
+        print("felicitaciones lo adivinaste")
+        bandera=True
+else:
+    if num>numero:
+        print("el numero que ingresaste es mayor")
+    else:
+        print("el numero que ingresaste es menor")        
